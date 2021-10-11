@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 
 module.exports = {
     name: 'penis',
+    parameter: '',
     description: 'Command to see penis size :eyes:',
     execute(message, arguments) {
         const rand = Math.floor(Math.random() * 16);

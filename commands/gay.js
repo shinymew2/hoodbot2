@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 
 module.exports = {
     name: 'gay',
+    parameter: '',
     description: 'Command to see gayness :gay_pride_flag:',
     execute(message, arguments) {
         const rand = Math.floor(Math.random() * 101);
