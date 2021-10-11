@@ -6,7 +6,6 @@ module.exports = {
         const voiceChannel = message.member.voice.channel;
         if (!voiceChannel) return message.reply('You have to be in a voice channel to pause the music!');
         if (!distube.getQueue(message)) return message.reply('Nothing there to skip!');
-        console.log(distube.getQueue(message).length > 1);
         if (distube.getQueue(message).songs.length > 1) {
             distube.skip(message);
         } else {
