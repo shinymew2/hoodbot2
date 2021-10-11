@@ -8,5 +8,6 @@ module.exports = {
         if (!voiceChannel) return message.reply('You have to be in a voice channel to play music!');
         if (arguments.length === 0) return message.reply('You have to specify a song!');
         await distube.play(message, arguments.join(' '));
+        return message.channel.send('Added your song to the queue!');
     }
 }
