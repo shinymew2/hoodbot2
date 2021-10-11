@@ -1,6 +1,6 @@
 module.exports = {
     name: 'earrape',
-    parameter: 'on | off',
+    parameter: '<on | off>',
     description: "Command to change the tone of the music :smirk:",
     async execute(message, arguments, distube) {
         const queue = distube.getQueue(message);
